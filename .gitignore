@@ -6,3 +6,14 @@
 /multiselect/.vs/multiselect
 /multiselect/sampledb/sampledb.dbmdl
 /multiselect/sampledb/sampledb.jfm
+/multiselect/.vs/config
+/multiselect/customHtmlHelpers/bin/
+/multiselect/customHtmlHelpers/obj/Debug
+/multiselect/sampledb/bin/
+/multiselect/sampledb/obj/Debug
+/multiselect/sampleDAL/bin/
+/multiselect/sampleDAL/obj/Debug
+/multiselect/sampleDAL/obj/Release
+/multiselect/sampleGUI/bin/
+/multiselect/sampleGUI/obj/Debug
+/multiselect/sampleGUI/obj/Release
