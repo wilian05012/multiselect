@@ -1,0 +1,6 @@
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.dacpac
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.pdb
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.sqlprojAssemblyReference.cache
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.pdb

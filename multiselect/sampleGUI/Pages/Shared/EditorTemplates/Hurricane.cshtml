@@ -1,0 +1,22 @@
+﻿@model sampleGUI.ViewModel.HurricaneViewModel
+
+<div class="form-group">
+    <label asp-for="Id"></label>
+    <input asp-for="Id" class="form-control" />
+    <span asp-validation-for="Id" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" placeholder="Storm name..." />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="SaffirSimpsonCategory"></label>
+    <input asp-for="SaffirSimpsonCategory" type="range" min="1" max="5" class="form-control-range"/>
+    <span asp-validation-for="SaffirSimpsonCategory" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="LandFall"></label>
+    <input asp-for="LandFall" class="form-control" />
+    <span asp-validation-for="LandFall" class="text-danger"></span>
+</div>

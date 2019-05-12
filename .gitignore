@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/multiselect/.vs/multiselect
+/multiselect/sampledb/sampledb.dbmdl
+/multiselect/sampledb/sampledb.jfm

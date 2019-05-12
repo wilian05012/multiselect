@@ -1,0 +1,56 @@
+﻿@page
+@model sampleGUI.Pages.Hurricanes.IndexModel
+@using sampleGUI.ViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Hurricanes</h1>
+<hr />
+
+<form method="post">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><label asp-for="NewHurricane.Id"></label></th>
+                <th><label asp-for="NewHurricane.Name"></label></th>
+                <th style="text-align: center;"><label asp-for="NewHurricane.SaffirSimpsonCategory"></label></th>
+                <th><label asp-for="NewHurricane.LandFall"></label></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (HurricaneViewModel hurricane in Model.Hurricanes) {
+                <tr>
+                    <td>@hurricane.Id</td>
+                    <td>@hurricane.Name</td>
+                    <td style="text-align: center;" ><span class="badge badge-danger">@hurricane.SaffirSimpsonCategory</span></td>
+                    <td>@hurricane.LandFall.ToString("MMM dd, yyyy")</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@hurricane.Id" class="btn btn-sm btn-info">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <button type="submit" asp-page-handler="delete" asp-route-id="@hurricane.Id" class="btn btn-sm btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
+<form method="post">
+    @Html.EditorFor(m => m.NewHurricane)
+    <div class="form-group" style="margin-top: 1em;">
+        <button type="submit" class="btn btn-sm btn-success">
+            <i class="fa fa-save"></i> Save
+        </button>
+    </div>
+</form>
+
+
+@section Scripts  {
+    <partial name="_ValidationScriptsPartial" />
+}
+
