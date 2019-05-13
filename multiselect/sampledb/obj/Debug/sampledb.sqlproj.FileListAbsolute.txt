@@ -14,3 +14,13 @@ C:\Users\wilia\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\postdeplo
 C:\Users\wilia\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\predeploy.sql
 C:\Users\wilia\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.dll
 C:\Users\wilia\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.pdb
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.dacpac
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.dll
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\bin\Debug\sampledb.pdb
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.sqlprojAssemblyReference.cache
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\Model.xml
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\refactor.xml
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\postdeploy.sql
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\predeploy.sql
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.dll
+C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampledb\obj\Debug\sampledb.pdb

@@ -24,6 +24,7 @@ namespace sampleGUI.ViewModel {
         [Required]
         [DataType(DataType.Date)]
         [DisplayName("Landfall date")]
+        [DisplayFormat(DataFormatString = "{0:MMM dd, yyyy}")]
         public DateTime LandFall { get; set; }
 
         [DisplayName("Affected counties")]

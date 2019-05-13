@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {}
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+        "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
         "projectName": "CustomHtmlHelpers",
-        "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
-        "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
+        "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+        "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

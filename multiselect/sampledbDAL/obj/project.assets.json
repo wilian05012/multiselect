@@ -1111,7 +1111,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
-      "sha512": "UVq94HrsK/eUSo4bkYBYW30UQ/uH2GoXcjTv7oIdeMKnAjLE3jm3C/BmftkQpr9beQCSbbcEySaVDhjlhrcQJQ==",
+      "sha512": "kz7C0Ddnge16NRf4CU8GygYxOor3+oQ797//eXI+xbKlJr2ighAEkno9gOipDlym4SiFtKNNuOuBI/BDBGD7Kg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
       "files": [
@@ -1139,7 +1139,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
-      "sha512": "TBH6CWmLns4U38WO64Q9ecOcWdMHCdFX/2vM4aJtbrt2CftG4TbAY5/9BNVacw/64HbCv7Hzjk/5xU26gxL8Xg==",
+      "sha512": "nxdW1YfZtn3nbcFqIAbjo6vCbCNOx0g82qMv+9fTUsNTsW0KSENYc2pbjF3yO8ZqYdBjmx2gMfAGk6wjy5cldg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.6",
       "files": [
@@ -3673,23 +3673,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wilia\\.nuget\\packages\\": {},
+    "C:\\Users\\WABrito\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wilia\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+      "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
       "projectName": "sampledbDAL",
-      "projectPath": "C:\\Users\\wilia\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
-      "packagesPath": "C:\\Users\\wilia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wilia\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
+      "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+      "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wilia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3726,7 +3726,7 @@
             "version": "[1.1.6, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.2.4, )"

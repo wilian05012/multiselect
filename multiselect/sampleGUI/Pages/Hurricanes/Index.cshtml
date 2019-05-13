@@ -25,7 +25,7 @@
                     <td>@hurricane.Id</td>
                     <td>@hurricane.Name</td>
                     <td style="text-align: center;" ><span class="badge badge-danger">@hurricane.SaffirSimpsonCategory</span></td>
-                    <td>@hurricane.LandFall.ToString("MMM dd, yyyy")</td>
+                    <td>@Html.DisplayFor(m => hurricane.LandFall)</td>
                     <td>
                         <a asp-page="./Edit" asp-route-id="@hurricane.Id" class="btn btn-sm btn-info">
                             <i class="fa fa-edit"></i> Edit

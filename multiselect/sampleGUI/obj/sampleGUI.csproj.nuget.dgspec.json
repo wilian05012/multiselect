@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj": {}
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+        "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
         "projectName": "CustomHtmlHelpers",
-        "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
-        "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
+        "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+        "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -56,20 +60,20 @@
         }
       }
     },
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+        "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
         "projectName": "sampledbDAL",
-        "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
-        "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
+        "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+        "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,20 +130,20 @@
         }
       }
     },
-    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj": {
+    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj",
+        "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj",
         "projectName": "sampleGUI",
-        "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj",
-        "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampleGUI\\obj\\",
+        "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampleGUI\\sampleGUI.csproj",
+        "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampleGUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,11 +156,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
-                "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj"
+              "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj": {
+                "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj"
               },
-              "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
-                "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj"
+              "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
+                "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj"
               }
             }
           }

@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 
 namespace CustomHtmlHelpers {
@@ -21,7 +22,12 @@ namespace CustomHtmlHelpers {
             string cboxName = ExpressionHelper.GetExpressionText(expression);
             
             IEnumerable<T> results = ExpressionMetadataProvider.FromLambdaExpression(expression, htmlHelper.ViewData, htmlHelper.MetadataProvider).Model as IEnumerable<T>;
-            
+
+
+            TagBuilder mainContainer = new TagBuilder("div");
+            foreach(PropertyInfo prop in htmlAttributes.GetType().GetProperties()) {
+                mainContainer.Attributes.Add(prop.Name, prop.GetValue(htmlAttributes).ToString());
+            }
 
             foreach(SelectListItem item in items) {
                 TagBuilder checkbox = new TagBuilder("input");
