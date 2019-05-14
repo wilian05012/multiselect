@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {}
+    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
+    "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+        "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
         "projectName": "sampledbDAL",
-        "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
-        "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
+        "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\sampledbDAL.csproj",
+        "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\sampledbDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
