@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sampledbDAL", "sampledbDAL\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sampleGUI", "sampleGUI\sampleGUI.csproj", "{13BEFDCB-D5EA-4B50-9BAA-F39901AFE8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customHtmlHelpers", "customHtmlHelpers\customHtmlHelpers.csproj", "{8195AFB7-BF89-426A-9FB2-A57B2DED784B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "customHtmlHelpers", "customHtmlHelpers\customHtmlHelpers.csproj", "{8195AFB7-BF89-426A-9FB2-A57B2DED784B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,18 +17,18 @@ namespace sampleGUI.ViewModel {
         public ICollection<int> HurricanesId { get; set; }
 
         public static explicit operator CountyViewModel(DAL.County county) {
-            return new CountyViewModel() {
+            return county is null ? null : new CountyViewModel() {
                 Id = county.Id,
                 Name = county.Name,
-                HurricanesId = county.Affections.Select(affection => affection.HurricaneId).ToList()
+                HurricanesId = county.Affectations is null ? null : county.Affectations.Select(affection => affection.HurricaneId).ToList()
             };
         }
 
         public static explicit operator DAL.County(CountyViewModel county) {
-            return new DAL.County() {
+            return county is null ? null : new DAL.County() {
                 Id = county.Id,
                 Name = county.Name,
-                Affections = county.HurricanesId.Select(hurricaneId => new DAL.Affection() { CountyId = county.Id, HurricaneId = hurricaneId }).ToList()
+                Affectations = county.HurricanesId is null ? null : county.HurricanesId.Select(hurricaneId => new DAL.Affectation() { CountyId = county.Id, HurricaneId = hurricaneId }).ToList()
             };
         }
     }

@@ -18,8 +18,13 @@ using sampleGUI;
 
 #line default
 #line hidden
+#line 2 "C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampleGUI\Pages\_ViewImports.cshtml"
+using CustomHtmlHelpers;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Pages/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"453fec38566ba8f2a2d5e9e99a0c65f4622463d9", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4fb99af04828dc05db242b7fb5bf1953c56767e4", @"/Pages/_ViewImports.cshtml")]
     public class Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

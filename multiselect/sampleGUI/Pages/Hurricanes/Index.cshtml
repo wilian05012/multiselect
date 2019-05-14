@@ -41,7 +41,7 @@
 </form>
 
 <form method="post">
-    @Html.EditorFor(m => m.NewHurricane)
+    @Html.EditorFor(m => m.NewHurricane, new  { Counties = Model.AvailableCounties })
     <div class="form-group" style="margin-top: 1em;">
         <button type="submit" class="btn btn-sm btn-success">
             <i class="fa fa-save"></i> Save

@@ -13,7 +13,7 @@ namespace sampledbDAL {
 
         public virtual DbSet<County> Counties { get; set; }
         public virtual DbSet<Hurricane> Hurricanes { get; set; }
-        public virtual DbSet<Affection> Affections { get; set; }
+        public virtual DbSet<Affectation> Affections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.4-servicing-10062");
@@ -42,19 +42,19 @@ namespace sampledbDAL {
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Affection>(entity => {
+            modelBuilder.Entity<Affectation>(entity => {
                 entity.HasKey(e => new { e.HurricaneId, e.CountyId })
                     .HasName("PK_xtblHurricaneCounties");
 
                 entity.ToTable("xtblHurricanCounties");
 
                 entity.HasOne(d => d.County)
-                    .WithMany(p => p.Affections)
+                    .WithMany(p => p.Affectations)
                     .HasForeignKey(d => d.CountyId)
                     .HasConstraintName("FK_xtblHurricaneCounties_tblCounties");
 
                 entity.HasOne(d => d.Hurricane)
-                    .WithMany(p => p.Affections)
+                    .WithMany(p => p.Affectations)
                     .HasForeignKey(d => d.HurricaneId)
                     .HasConstraintName("FK_xtblHurricaneCounties_tblHurricanes");
             });

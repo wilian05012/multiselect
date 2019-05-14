@@ -27,12 +27,31 @@ namespace sampleGUI.Pages.Hurricanes {
 
         public async Task<IActionResult> OnGetAsync() {
             Hurricanes = await _context.Hurricanes
-                .Include(hurricane => hurricane.Affections)
+                .Include(hurricane => hurricane.Affectations)
                 .Select(hurricane => (HurricaneViewModel)hurricane)
                 .ToArrayAsync();
                 
 
             return Page();
+        }
+
+        public async Task<IActionResult> OnPostAsync() {
+            if(ModelState.IsValid) {
+                Hurricane hurricane = (Hurricane)NewHurricane;
+                _context.Entry(hurricane).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+
+                NewHurricane = new HurricaneViewModel();
+
+                return Redirect("Hurricanes/Index");
+            } else {
+                Hurricanes = await _context.Hurricanes
+                .Include(hurricane => hurricane.Affectations)
+                .Select(hurricane => (HurricaneViewModel)hurricane)
+                .ToArrayAsync();
+
+                return Page();
+            }
         }
 
         public async Task<IActionResult> OnPostDelete(int id) {

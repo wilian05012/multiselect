@@ -12,7 +12,7 @@ using sampleGUI.ViewModel;
 namespace sampleGUI.Pages.Hurricanes {
     public class EditModel : PageModel {
         private readonly SampleDbContext _context;
-        private IEnumerable<County> AvailableCounties { get;  } 
+        public IEnumerable<County> AvailableCounties { get;  } 
 
         public EditModel(SampleDbContext context) {
             _context = context;

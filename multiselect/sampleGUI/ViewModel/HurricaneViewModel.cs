@@ -36,22 +36,22 @@ namespace sampleGUI.ViewModel {
         }
 
         public static explicit operator HurricaneViewModel(DAL.Hurricane hurricane) {
-            return new HurricaneViewModel() {
+            return hurricane is null ? null : new HurricaneViewModel() {
                 Id = hurricane.Id,
                 SaffirSimpsonCategory = hurricane.SaffirSimpsonCat,
                 Name = hurricane.Name,
                 LandFall = hurricane.LandfallDate,
-                AffecttedCountiesId = hurricane.Affections.Select(affection => affection.CountyId).ToList()
+                AffecttedCountiesId = hurricane.Affectations is null ? null : hurricane.Affectations.Select(affection => affection.CountyId).ToList()
             };
         }
 
         public static explicit operator DAL.Hurricane(HurricaneViewModel hurricane) {
-            return new DAL.Hurricane() {
+            return hurricane is null ? null : new DAL.Hurricane() {
                 Id = hurricane.Id,
                 Name = hurricane.Name,
                 SaffirSimpsonCat = hurricane.SaffirSimpsonCategory,
                 LandfallDate = hurricane.LandFall,
-                Affections = hurricane.AffecttedCountiesId.Select(countyId => new DAL.Affection() { HurricaneId = hurricane.Id, CountyId = countyId }).ToList()
+                Affectations = hurricane.AffecttedCountiesId is null ? null : hurricane.AffecttedCountiesId.Select(countyId => new DAL.Affectation() { HurricaneId = hurricane.Id, CountyId = countyId }).ToList()
             };
         }
     }

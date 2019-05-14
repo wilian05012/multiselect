@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace sampledbDAL {
-    public partial class Affection {
+    public partial class Affectation {
         public int HurricaneId { get; set; }
         public int CountyId { get; set; }
 

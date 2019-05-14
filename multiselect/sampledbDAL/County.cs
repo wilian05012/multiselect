@@ -4,12 +4,12 @@ using System.Collections.Generic;
 namespace sampledbDAL {
     public partial class County {
         public County() {
-            Affections = new HashSet<Affection>();
+            Affectations = new HashSet<Affectation>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Affection> Affections { get; set; }
+        public virtual ICollection<Affectation> Affectations { get; set; }
     }
 }

@@ -1,13 +1,16 @@
 ﻿using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
+using System.Text.Encodings.Web;
 
 namespace CustomHtmlHelpers {
     public static class HtmlHelperExtensions {
@@ -18,19 +21,28 @@ namespace CustomHtmlHelpers {
             IEnumerable<SelectListItem> items, 
             object htmlAttributes, 
             int cols = 1) {
-
-            string cboxName = ExpressionHelper.GetExpressionText(expression);
             
-            IEnumerable<T> results = ExpressionMetadataProvider.FromLambdaExpression(expression, htmlHelper.ViewData, htmlHelper.MetadataProvider).Model as IEnumerable<T>;
+            ModelExplorer modelExplorer = ExpressionMetadataProvider.FromLambdaExpression(expression, htmlHelper.ViewData, htmlHelper.MetadataProvider);
+            StringBuilder strBuilder = new StringBuilder(modelExplorer.Metadata.Name);
+            
+            while(modelExplorer.Container.Metadata.Name != null) {
+                modelExplorer = modelExplorer.Container;
+                strBuilder.Insert(0, ".");
+                strBuilder.Insert(0, modelExplorer.Metadata.Name);
+            }
+
+            string cboxName = strBuilder.ToString();
 
             TagBuilder mainContainer = new TagBuilder("div");
-            foreach(PropertyInfo prop in htmlAttributes.GetType().GetProperties()) {
-                mainContainer.Attributes.Add(prop.Name, prop.GetValue(htmlAttributes).ToString());
+            if (htmlAttributes != null) {
+                foreach (PropertyInfo prop in htmlAttributes.GetType().GetProperties()) {
+                    mainContainer.Attributes.Add(prop.Name, prop.GetValue(htmlAttributes).ToString());
+                }
             }
 
             int totalRows = items.Count() / cols + 1;
             TagBuilder grid = new TagBuilder("div");
-            grid.Attributes.Add("style", $"grid-template-columns: {cols}; grid-template-rows: {totalRows}");
+            grid.Attributes.Add("style", $"display: grid; grid-template-columns: {cols}; grid-template-rows: {totalRows}");
 
             int index = 0;
             foreach(SelectListItem item in items) {
@@ -43,12 +55,18 @@ namespace CustomHtmlHelpers {
                 TagBuilder checkbox = new TagBuilder("input");
                 Dictionary<string, string> attributes = new Dictionary<string, string>() {
                     { "type", "checkbox" },
-                    { "name", cboxName }
+                    { "name", cboxName },
+                    { "value", item.Value }
                 };
 
-                if(results.Any(r => r.ToString().Equals(item.Value))) {
+                //if(results.Any(r => r.ToString().Equals(item.Value))) {
+                //    attributes.Add("checked", "checked");
+                //}
+                if(item.Selected) {
                     attributes.Add("checked", "checked");
                 }
+
+                checkbox.GenerateId($"{cboxName}_{item.Value}", "_");
                 foreach(string key in attributes.Keys) { checkbox.Attributes.Add(key, attributes[key]); }
 
                 TagBuilder span = new TagBuilder("span");
@@ -70,7 +88,19 @@ namespace CustomHtmlHelpers {
             mainContainer.InnerHtml.AppendHtml(grid.RenderBody());
             mainContainer.InnerHtml.AppendLine(grid.RenderEndTag());
 
-            return null;
+            string result;
+            using(TextWriter textWriter = new StringWriter()) {
+                mainContainer.WriteTo(textWriter, HtmlEncoder.Default);
+                result = textWriter.ToString();
+            }
+
+            return new HtmlString(result);
         }
+
+        public static HtmlString MultiSelect<TModel, T>(
+            this IHtmlHelper<TModel> htmlHelper,
+            Expression<Func<TModel, IEnumerable<T>>> expression,
+            IEnumerable<SelectListItem> items,
+            int cols = 1) { return MultiSelect(htmlHelper, expression, items, null, cols); }
     }
 }

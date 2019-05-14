@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace sampledbDAL {
     public partial class Hurricane {
         public Hurricane() {
-            Affections = new HashSet<Affection>();
+            Affectations = new HashSet<Affectation>();
         }
 
         public int Id { get; set; }
@@ -12,6 +12,6 @@ namespace sampledbDAL {
         public DateTime LandfallDate { get; set; }
         public int SaffirSimpsonCat { get; set; }
 
-        public virtual ICollection<Affection> Affections { get; set; }
+        public virtual ICollection<Affectation> Affectations { get; set; }
     }
 }
