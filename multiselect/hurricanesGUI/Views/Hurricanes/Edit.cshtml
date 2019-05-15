@@ -1,0 +1,21 @@
+﻿@model hurricanesGUI.Models.HurricaneViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit hurricane <strong>@Model.Name</strong></h2>
+<hr />
+
+@using (Html.BeginForm("Edit", "Hurricanes", method: FormMethod.Post)) {
+    @Html.EditorForModel("Hurricane")
+
+    <div class="form-group" style="margin-top: 1em;">
+        <input type="submit" class="btn btn-sm btn-success" value="Add" />
+    </div>
+}
+
+@section scripts {
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

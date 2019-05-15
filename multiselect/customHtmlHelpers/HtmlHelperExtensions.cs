@@ -21,7 +21,9 @@ namespace CustomHtmlHelpers {
             IEnumerable<SelectListItem> items, 
             object htmlAttributes, 
             int cols = 1) {
-            
+
+            cols = (cols < 1 || cols > 12) ? 1 : cols;
+
             ModelExplorer modelExplorer = ExpressionMetadataProvider.FromLambdaExpression(expression, htmlHelper.ViewData, htmlHelper.MetadataProvider);
             StringBuilder strBuilder = new StringBuilder(modelExplorer.Metadata.Name);
             
@@ -40,7 +42,7 @@ namespace CustomHtmlHelpers {
                 }
             }
 
-            int totalRows = items.Count() / cols + 1;
+            int totalRows = items.Count() % cols == 0 ? items.Count()/cols : items.Count() / cols + 1;
             TagBuilder grid = new TagBuilder("div");
             grid.Attributes.Add("style", $"display: grid; grid-template-columns: {cols}; grid-template-rows: {totalRows}");
 

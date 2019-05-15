@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HurricanesDb.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lktCounties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHurricanes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LandfallDate" Type="date" Nullable="false" />
+    <Property Name="SaffirSimpsonCat" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="xtblHurricanCounties">
+    <Key>
+      <PropertyRef Name="HurricaneId" />
+      <PropertyRef Name="CountyId" />
+    </Key>
+    <Property Name="HurricaneId" Type="int" Nullable="false" />
+    <Property Name="CountyId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_xtblHurricaneCounties_tblCounties">
+    <End Role="lktCounties" Type="Self.lktCounties" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xtblHurricanCounties" Type="Self.xtblHurricanCounties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lktCounties">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="xtblHurricanCounties">
+        <PropertyRef Name="CountyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_xtblHurricaneCounties_tblHurricanes">
+    <End Role="tblHurricanes" Type="Self.tblHurricanes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="xtblHurricanCounties" Type="Self.xtblHurricanCounties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblHurricanes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="xtblHurricanCounties">
+        <PropertyRef Name="HurricaneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HurricanesDbStoreContainer">
+    <EntitySet Name="lktCounties" EntityType="Self.lktCounties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHurricanes" EntityType="Self.tblHurricanes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="xtblHurricanCounties" EntityType="Self.xtblHurricanCounties" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_xtblHurricaneCounties_tblCounties" Association="Self.FK_xtblHurricaneCounties_tblCounties">
+      <End Role="lktCounties" EntitySet="lktCounties" />
+      <End Role="xtblHurricanCounties" EntitySet="xtblHurricanCounties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_xtblHurricaneCounties_tblHurricanes" Association="Self.FK_xtblHurricaneCounties_tblHurricanes">
+      <End Role="tblHurricanes" EntitySet="tblHurricanes" />
+      <End Role="xtblHurricanCounties" EntitySet="xtblHurricanCounties" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

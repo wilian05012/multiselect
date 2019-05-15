@@ -1,0 +1,12 @@
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\hurricanesDAL.dll.config
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\hurricanesDAL.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\hurricanesDAL.pdb
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\EntityFramework.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\EntityFramework.xml
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\obj\Debug\hurricanesDAL.csprojAssemblyReference.cache
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\obj\Debug\hurricanesDAL.csproj.CoreCompileInputs.cache
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\obj\Debug\hurricanesDAL.csproj.CopyComplete
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\obj\Debug\hurricanesDAL.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesDAL\obj\Debug\hurricanesDAL.pdb

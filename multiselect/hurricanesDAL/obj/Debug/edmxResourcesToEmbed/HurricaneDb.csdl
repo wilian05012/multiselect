@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HurricanesDb" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="County">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Hurricanes" Relationship="Self.xtblHurricanCounties" FromRole="lktCounties" ToRole="tblHurricanes" />
+  </EntityType>
+  <EntityType Name="Hurricane">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LandfallDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SaffirSimpsonCat" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AffectedCounties" Relationship="Self.xtblHurricanCounties" FromRole="tblHurricanes" ToRole="lktCounties" />
+  </EntityType>
+  <Association Name="xtblHurricanCounties">
+    <End Role="lktCounties" Type="HurricanesDb.County" Multiplicity="*" />
+    <End Role="tblHurricanes" Type="HurricanesDb.Hurricane" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="SampleDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Counties" EntityType="HurricanesDb.County" />
+    <EntitySet Name="Hurricanes" EntityType="HurricanesDb.Hurricane" />
+    <AssociationSet Name="xtblHurricanCounties" Association="Self.xtblHurricanCounties">
+      <End Role="lktCounties" EntitySet="Counties" />
+      <End Role="tblHurricanes" EntitySet="Hurricanes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

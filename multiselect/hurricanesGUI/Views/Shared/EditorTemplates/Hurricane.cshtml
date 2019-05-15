@@ -1,0 +1,38 @@
+﻿@model hurricanesGUI.Models.HurricaneViewModel
+@using DosExtensions;
+
+@{ 
+    IEnumerable<hurricanesGUI.Models.CountyViewModel> availableCounties = ViewData["AvailableCounties"] as IEnumerable<hurricanesGUI.Models.CountyViewModel>;
+}
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Id, new { @class = "control-label"})
+    @Html.TextBoxFor(m => m.Id, new { @class = "form-control"})
+    @Html.ValidationMessageFor(m => m.Id, "", new { @class = "text-danger"})
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.Name, new { @class = "control-label"})
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Storm name..."})
+    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger"})
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.SaffirSimpsonCategory, new { @class = "control-label"})
+    @Html.EditorFor(m => m.SaffirSimpsonCategory)
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.LandfallDate, new { @class = "control-label"})
+    @Html.TextBoxFor(m => m.LandfallDate, new { @class = "form-control", @type = "date" })
+    @Html.ValidationMessageFor(m => m.LandfallDate)
+</div>
+<div class="form-group">
+    <h3>List of affected countries</h3>
+    @{ 
+        IEnumerable<SelectListItem> items = availableCounties.Select(county => new SelectListItem() {
+            Value = county.Id.ToString(),
+            Text = county.Name,
+            Selected = Model.AffectedCountiesId?.Any(countyId => county.Id == countyId) ?? false
+        });
+    }
+
+    @Html.MultiSelectFor(m => m.AffectedCountiesId, items, cols: 3)
+</div>
