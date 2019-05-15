@@ -107,3 +107,5 @@ C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampleGUI\obj\Debug\netcor
 C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampleGUI\obj\Debug\netcoreapp2.2\sampleGUI.csproj.CopyComplete
 C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampleGUI\obj\Debug\netcoreapp2.2\sampleGUI.dll
 C:\Users\WABrito\Source\Repos\multiselect\multiselect\sampleGUI\obj\Debug\netcoreapp2.2\sampleGUI.pdb
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampleGUI\bin\Debug\netcoreapp2.2\CustomHtmlHelpers.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampleGUI\bin\Debug\netcoreapp2.2\CustomHtmlHelpers.pdb

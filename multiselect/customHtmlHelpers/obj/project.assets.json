@@ -376,7 +376,7 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.2.0": {
-      "sha512": "vpH+o7f8obVx65PiEtBXxTwL5RosK60fNIMy/y8WGE4/r4IvAqQGukOzMhxsp//Accvd7kmukyQTVkqVYdaDyA==",
+      "sha512": "azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.2.0",
       "files": [
@@ -976,23 +976,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WABrito\\.nuget\\packages\\": {},
+    "C:\\Users\\WilliamAlexander\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+      "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
       "projectName": "CustomHtmlHelpers",
-      "projectPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
-      "packagesPath": "C:\\Users\\WABrito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WABrito\\Source\\Repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
+      "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
+      "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\WABrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WilliamAlexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

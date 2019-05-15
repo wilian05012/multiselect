@@ -38,12 +38,17 @@ namespace sampleGUI.Pages.Hurricanes {
         public async Task<IActionResult> OnPostAsync() {
             if(ModelState.IsValid) {
                 Hurricane hurricane = (Hurricane)NewHurricane;
-                _context.Entry(hurricane).State = EntityState.Modified;
+
+                foreach (Affectation affectation in hurricane.Affectations) {
+                    _context.Entry(affectation).State = EntityState.Added;
+                }
+
+                _context.Entry(hurricane).State = EntityState.Added;
                 await _context.SaveChangesAsync();
 
                 NewHurricane = new HurricaneViewModel();
 
-                return Redirect("Hurricanes/Index");
+                return Redirect("/Hurricanes/Index");
             } else {
                 Hurricanes = await _context.Hurricanes
                 .Include(hurricane => hurricane.Affectations)
@@ -61,7 +66,7 @@ namespace sampleGUI.Pages.Hurricanes {
                 await _context.SaveChangesAsync();
             }
 
-            return Page();
+            return Redirect("/Hurricanes/Index");
         }
     }
 }

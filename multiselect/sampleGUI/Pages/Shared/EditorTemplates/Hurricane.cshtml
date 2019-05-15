@@ -31,6 +31,6 @@
                 Text = county.Name,
                 Selected = Model.AffecttedCountiesId?.Any(countyId => countyId == county.Id) ?? false });
     }
-
-    @Html.MultiSelect(m => m.AffecttedCountiesId, items, cols: 3)
+    <h2>List of affected counties</h2><hr />
+    @Html.MultiSelect(m => m.AffecttedCountiesId, items, new { @class = "checkbox-list" }, cols: 3)
 </div>

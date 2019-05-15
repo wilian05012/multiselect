@@ -69,13 +69,15 @@ namespace CustomHtmlHelpers {
                 checkbox.GenerateId($"{cboxName}_{item.Value}", "_");
                 foreach(string key in attributes.Keys) { checkbox.Attributes.Add(key, attributes[key]); }
 
-                TagBuilder span = new TagBuilder("span");
-                span.InnerHtml.AppendLine(item.Text);
+                TagBuilder label = new TagBuilder("label");
+                label.Attributes.Add("for", checkbox.Attributes["id"]);
+                label.InnerHtml.Append(item.Text);
+
 
                 cell.InnerHtml.AppendLine(checkbox.RenderSelfClosingTag());
-                cell.InnerHtml.AppendHtml(span.RenderStartTag());
-                cell.InnerHtml.AppendHtml(span.RenderBody());
-                cell.InnerHtml.AppendLine(span.RenderEndTag());
+                cell.InnerHtml.AppendHtml(label.RenderStartTag());
+                cell.InnerHtml.AppendHtml(label.RenderBody());
+                cell.InnerHtml.AppendLine(label.RenderEndTag());
 
                 grid.InnerHtml.AppendHtml(cell.RenderStartTag());
                 grid.InnerHtml.AppendHtml(cell.RenderBody());
