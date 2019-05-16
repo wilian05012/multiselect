@@ -33,8 +33,7 @@
         })
         .OrderBy(item => item.Text);
 
-        string namePrefix = ViewData["NamePrefix"].ToString();
     }
 
-    @Html.MultiSelectFor(m => m.AffectedCountiesId, namePrefix, items, cols: 3)
+    @Html.MultiSelectFor(m => m.AffectedCountiesId, items, cols: 3)
 </div>

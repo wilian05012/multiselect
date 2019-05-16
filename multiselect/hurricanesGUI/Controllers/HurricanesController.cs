@@ -89,7 +89,7 @@ namespace hurricanesGUI.Controllers {
                                                     .ToArray()
                                                     .Select(county => (CountyViewModel)county)
                                                     .ToArray();
-                ViewData["NamePrefix"] = "";
+
                 return View((HurricaneViewModel)hurricane);
             }
         }

@@ -25,7 +25,6 @@ namespace System.Web.Mvc {
         public static MvcHtmlString MultiSelectFor<TModel, T>(
             this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, IEnumerable<T>>> expression, 
-            string namePrefix,
             IEnumerable<SelectListItem> items, 
             object htmlAttributes, 
             int cols = 1 ) {
@@ -45,9 +44,11 @@ namespace System.Web.Mvc {
 
 
             ModelMetadata modelMetadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
-            string cboxName = String.IsNullOrWhiteSpace(namePrefix) ? 
+            string prefix = htmlHelper.ViewData.TemplateInfo.HtmlFieldPrefix;
+
+            string cboxName = String.IsNullOrWhiteSpace(prefix) ? 
                 modelMetadata.PropertyName : 
-                $"{namePrefix}.{modelMetadata.PropertyName}";
+                $"{prefix}.{modelMetadata.PropertyName}";
 
             int index = 0;
             StringBuilder gridContentBuilder = new StringBuilder();
@@ -91,11 +92,10 @@ namespace System.Web.Mvc {
         public static MvcHtmlString MultiSelectFor<TModel, T>(
             this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, IEnumerable<T>>> expression, 
-            string namePrefix,
             IEnumerable<SelectListItem> items, 
             int cols = 1) {
 
-            return Extensions.MultiSelectFor(htmlHelper, expression, namePrefix, items, null, cols);
+            return Extensions.MultiSelectFor(htmlHelper, expression, items, null, cols);
         }
     }
 }
