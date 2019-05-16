@@ -8,11 +8,24 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
-namespace DosExtensions {
+namespace System.Web.Mvc {
     public static class Extensions {
+        /// <summary>
+        /// Generates the HTML markup corresponding to a list of checkboxes.
+        /// </summary>
+        /// <typeparam name="TModel">The type of the model</typeparam>
+        /// <typeparam name="T">The type of the elements of the enumeration. Use simple types</typeparam>
+        /// <param name="htmlHelper"></param>
+        /// <param name="expression">The lambda expression that yields an enumeration of Ts</param>
+        /// <param name="namePrefix">Prefix to be used by the name for the generated checkboxes</param>
+        /// <param name="items">List of available options to be displayed</param>
+        /// <param name="htmlAttributes">An object whose properties will become attributes for the HTML main container element</param>
+        /// <param name="cols">Number of columns in which the list will be arranged. Valid values range lies between 1 and 12</param>
+        /// <returns></returns>
         public static MvcHtmlString MultiSelectFor<TModel, T>(
             this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, IEnumerable<T>>> expression, 
+            string namePrefix,
             IEnumerable<SelectListItem> items, 
             object htmlAttributes, 
             int cols = 1 ) {
@@ -30,8 +43,11 @@ namespace DosExtensions {
             TagBuilder grid = new TagBuilder("div");
             grid.Attributes.Add("style", $"display: grid; grid.template-columns: {cols}; grid-template-rows: {rows}");
 
-            string cboxName = ExpressionHelper.GetExpressionText(expression);
+
             ModelMetadata modelMetadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
+            string cboxName = String.IsNullOrWhiteSpace(namePrefix) ? 
+                modelMetadata.PropertyName : 
+                $"{namePrefix}.{modelMetadata.PropertyName}";
 
             int index = 0;
             StringBuilder gridContentBuilder = new StringBuilder();
@@ -75,10 +91,11 @@ namespace DosExtensions {
         public static MvcHtmlString MultiSelectFor<TModel, T>(
             this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, IEnumerable<T>>> expression, 
+            string namePrefix,
             IEnumerable<SelectListItem> items, 
             int cols = 1) {
 
-            return Extensions.MultiSelectFor(htmlHelper, expression, items, null, cols);
+            return Extensions.MultiSelectFor(htmlHelper, expression, namePrefix, items, null, cols);
         }
     }
 }

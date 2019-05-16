@@ -1,5 +1,5 @@
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\DosExtensions.dll
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\DosExtensions.pdb
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\DosCustomHtmlHelpersAspNetMvc.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\DosCustomHtmlHelpersAspNetMvc.pdb
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\System.Web.Helpers.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin\Debug\System.Web.Mvc.dll
@@ -16,5 +16,5 @@ C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\bin
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosExtensions.csprojAssemblyReference.cache
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosExtensions.csproj.CoreCompileInputs.cache
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosExtensions.csproj.CopyComplete
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosExtensions.dll
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosExtensions.pdb
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosCustomHtmlHelpersAspNetMvc.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\DosExtensions\obj\Debug\DosCustomHtmlHelpersAspNetMvc.pdb

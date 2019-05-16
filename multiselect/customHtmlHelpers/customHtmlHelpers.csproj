@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>CustomHtmlHelpers</RootNamespace>
-    <AssemblyName>CustomHtmlHelpers</AssemblyName>
+    <AssemblyName>DosCustomHtmlHelpersAspNetCore</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

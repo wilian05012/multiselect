@@ -8,10 +8,10 @@
 <hr />
 
 @using (Html.BeginForm("Edit", "Hurricanes", method: FormMethod.Post)) {
-    @Html.EditorForModel("Hurricane")
+    @Html.EditorForModel("Hurricane", new { AvailableCounties = ViewData["AvailableCounties"], NamePrefix = ViewData["NamePrefix"]})
 
     <div class="form-group" style="margin-top: 1em;">
-        <input type="submit" class="btn btn-sm btn-success" value="Add" />
+        <input type="submit" class="btn btn-sm btn-success" value="Save" />
     </div>
 }
 

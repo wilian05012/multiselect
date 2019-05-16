@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
-        "projectName": "CustomHtmlHelpers",
+        "projectName": "DosCustomHtmlHelpersAspNetCore",
         "projectPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\customHtmlHelpers.csproj",
         "packagesPath": "C:\\Users\\WilliamAlexander\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\WilliamAlexander\\Source\\repos\\multiselect\\multiselect\\customHtmlHelpers\\obj\\",

@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "sampleGUI/1.0.0": {
         "dependencies": {
-          "CustomHtmlHelpers": "1.0.0",
+          "DosCustomHtmlHelpersAspNetCore": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -487,15 +487,15 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "CustomHtmlHelpers/1.0.0": {
+      "DosCustomHtmlHelpersAspNetCore/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "runtime": {
-          "CustomHtmlHelpers.dll": {}
+          "DosCustomHtmlHelpersAspNetCore.dll": {}
         },
         "compile": {
-          "CustomHtmlHelpers.dll": {}
+          "DosCustomHtmlHelpersAspNetCore.dll": {}
         }
       },
       "sampledbDAL/1.0.0": {
@@ -3829,7 +3829,7 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
-    "CustomHtmlHelpers/1.0.0": {
+    "DosCustomHtmlHelpersAspNetCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

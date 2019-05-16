@@ -48,6 +48,9 @@ C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\roslyn\VBCSCompiler.exe
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Antlr3.Runtime.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\DosCustomHtmlHelpersAspNetMvc.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.SqlServer.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\hurricanesDAL.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Microsoft.Web.Infrastructure.dll
@@ -60,9 +63,11 @@ C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\System.Web.WebPages.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\System.Web.WebPages.Razor.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\WebGrease.dll
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.dll
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\DosCustomHtmlHelpersAspNetMvc.pdb
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\hurricanesDAL.pdb
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\hurricanesDAL.dll.config
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.xml
+C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.SqlServer.xml
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\System.Web.Helpers.xml
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\System.Web.Mvc.xml
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\System.Web.Optimization.xml
@@ -73,13 +78,8 @@ C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Newtonsoft.Json.xml
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Antlr3.Runtime.pdb
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.xml
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\obj\Debug\hurricanesGUI.csprojAssemblyReference.cache
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\obj\Debug\hurricanesGUI.csproj.CoreCompileInputs.cache
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\obj\Debug\hurricanesGUI.csproj.CopyComplete
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\obj\Debug\hurricanesGUI.dll
 C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\obj\Debug\hurricanesGUI.pdb
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.SqlServer.dll
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\EntityFramework.SqlServer.xml
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\DosExtensions.dll
-C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\hurricanesGUI\bin\DosExtensions.pdb

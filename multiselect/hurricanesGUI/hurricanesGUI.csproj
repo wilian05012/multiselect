@@ -174,7 +174,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Hurricanes\Index.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\SaffirSimpson.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\SaffirSimpson.cshtml" />
     <Content Include="Views\Hurricanes\Edit.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Hurricane.cshtml" />
   </ItemGroup>

@@ -18,14 +18,9 @@ using sampleGUI;
 
 #line default
 #line hidden
-#line 2 "C:\Users\WilliamAlexander\Source\repos\multiselect\multiselect\sampleGUI\Pages\_ViewImports.cshtml"
-using CustomHtmlHelpers;
-
-#line default
-#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute("RouteTemplate", "{id:int}")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e19851f1dafd94cc56097f0ea44303f04a8ba7f0", @"/Pages/Hurricanes/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4fb99af04828dc05db242b7fb5bf1953c56767e4", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"453fec38566ba8f2a2d5e9e99a0c65f4622463d9", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Hurricanes_Edit : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -72,7 +67,7 @@ using CustomHtmlHelpers;
             WriteLiteral("</strong></h1>\r\n<hr/>\r\n\r\n");
             EndContext();
             BeginContext(178, 306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e19851f1dafd94cc56097f0ea44303f04a8ba7f04491", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e19851f1dafd94cc56097f0ea44303f04a8ba7f04324", async() => {
                 BeginContext(198, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();

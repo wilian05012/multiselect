@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Html;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using System;
@@ -12,9 +11,19 @@ using System.Reflection;
 using System.Text;
 using System.Text.Encodings.Web;
 
-namespace CustomHtmlHelpers {
+namespace Microsoft.AspNetCore.Mvc.Rendering {
     public static class HtmlHelperExtensions {
-
+        /// <summary>
+        /// Generates the html for a grid of checkboxes
+        /// </summary>
+        /// <typeparam name="TModel">The type of the model</typeparam>
+        /// <typeparam name="T">The type enumerations. the of simple value types is recommended</typeparam>
+        /// <param name="htmlHelper"></param>
+        /// <param name="expression">The lambda expression resunting in an enumeration of Ts</param>
+        /// <param name="items">The list of available options</param>
+        /// <param name="htmlAttributes">A object whose properties will become attibutes of the resulting html container element</param>
+        /// <param name="cols">The number of columns to generate. Accepts values between 1 and 12.</param>
+        /// <returns></returns>
         public static HtmlString MultiSelect<TModel, T> (
             this IHtmlHelper<TModel> htmlHelper, 
             Expression<Func<TModel, IEnumerable<T>>> expression,

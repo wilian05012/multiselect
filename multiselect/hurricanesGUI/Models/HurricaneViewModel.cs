@@ -18,7 +18,6 @@ namespace hurricanesGUI.Models {
 
         [Required]
         [DisplayName("Category")]
-        [UIHint("SaffirSimpson")]
         [Range(1, 5)]
         public int SaffirSimpsonCategory { get; set; }
 

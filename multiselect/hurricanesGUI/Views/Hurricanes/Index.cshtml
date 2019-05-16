@@ -36,7 +36,7 @@
 </table>
 
 @using(Html.BeginForm("AddNew", "Hurricanes", method: FormMethod.Post)) {
-    @Html.EditorFor(m => m.NewHurricane, new { AvailableCounties = Model.AvailableCounties })
+    @Html.EditorFor(m => m.NewHurricane, new { AvailableCounties = Model.AvailableCounties, NamePrefix = "NewHurricane" })
     <div class="form-group" style="margin-top: 1em;">
         <input type="submit" class="btn btn-sm btn-success" value="Add" />
     </div>

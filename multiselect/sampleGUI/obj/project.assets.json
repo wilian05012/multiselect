@@ -4748,17 +4748,17 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "CustomHtmlHelpers/1.0.0": {
+      "DosCustomHtmlHelpersAspNetCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
         },
         "compile": {
-          "bin/placeholder/CustomHtmlHelpers.dll": {}
+          "bin/placeholder/DosCustomHtmlHelpersAspNetCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CustomHtmlHelpers.dll": {}
+          "bin/placeholder/DosCustomHtmlHelpersAspNetCore.dll": {}
         }
       },
       "sampledbDAL/1.0.0": {
@@ -13012,7 +13012,7 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "CustomHtmlHelpers/1.0.0": {
+    "DosCustomHtmlHelpersAspNetCore/1.0.0": {
       "type": "project",
       "path": "../customHtmlHelpers/customHtmlHelpers.csproj",
       "msbuildProject": "../customHtmlHelpers/customHtmlHelpers.csproj"
@@ -13025,7 +13025,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "CustomHtmlHelpers >= 1.0.0",
+      "DosCustomHtmlHelpersAspNetCore >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
